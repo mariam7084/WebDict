@@ -1,0 +1,123 @@
+/* Reset and Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #2a2d56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* App Header */
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+}
+
+.app-header h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+    word-spacing: 100%;
+}
+
+.app-header p {
+    font-size: 18px;
+    color: #62647a;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    width: 90vmin;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+/* Search Box */
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #1f2561;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #1f2561;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Result */
+.result {
+    position: relative;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button {
+    background-color: transparent;
+    color: #1f2561;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning {
+    color: #575a7b;
+}
+
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #1f2561;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
